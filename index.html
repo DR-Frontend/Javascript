@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   html{
+      height: 100%;
+      background: linear-gradient(0deg, rgb(15, 90, 200) 0%, rgb(0, 50, 150) 100%);
+   }
+   body{
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #fff;
+   }
+   .title{
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(0deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,0)100%);
+      /*background-color: rgba(255, 255, 255, .3);*/
+   }
+   .title__img{
+      width: 100px;
+   }
+   .title__txt{
+      padding: 0 50px;
+      text-align: center;
+   }
+   .wrapper{
+      width: 50%;
+      margin: auto;
+   }
+   .jsCard{
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 0 0 rgba(0,0,0,0);
+      transition: all .3s ease;
+   }
+   .jsCard:hover{
+      box-shadow: 0px 20px 10px -10px rgba(0,0,0,.3);
+      background-color: rgba(255, 255, 255, .2);
+   }
+   .jsCard__h2{
+      display: flex;
+      align-items: baseline;
+   }
+   .jsCard__h2 span{
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: .8rem;
+   }
+   .jsCard__img{
+      opacity: .2;
+      width: 150px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translate(0,-50%);
+   }
+   .jsCard__btn{
+      display: block;
+      width: fit-content;
+      margin-top: 10px;
+      padding: 10px 30px;
+      font-family: sans-serif;
+      font-size: .9rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 30px;
+      background-color: transparent;
+      box-shadow: 0 0 0 0 rgba(0,0,0,0);
+      transition: all .5s ease;
+   }
+   .jsCard__btn:hover{
+      background-color: rgba(255, 255, 255, .4);
+      box-shadow: 0px 15px 10px -10px rgba(0,0,0,.4);
+   }
+</style>
+<body>
+   <div class="title">
+      <img class="title__img" src="/img/js.svg">
+      <div class="title__txt">
+         <h1>JavaScript</h1>
+         <p>Ejercicios prácticos para uso de Javascript en el DOM</p>
+      </div>
+   </div>
+
+   <div class="wrapper">
+      <div class="jsCard">
+         <div class="jsCard__title">
+            <div class="jsCard__h2">
+               <h2>Basic Twitter</h2>
+               <span>11/Julio/2022</span>
+            </div>
+            <p>Crear y postear comentarios utilizando JS para generar nuevos Tweets.</p>
+            <a class="jsCard__btn" href="/ejercicios/twistter/twistter.html" target="_blank">Ir al ejercicio</a>
+         </div>
+         <img class="jsCard__img" src="img/code.svg" alt="">
+      </div>
+
+      <div class="jsCard">
+         <div class="jsCard__title">
+            <div class="jsCard__h2">
+               <h2>Próximo Ejercicio</h2>
+               <span>Próximamente</span>
+            </div>
+            <p>En aprendizaje y desarrollo.</p>
+            <a class="jsCard__btn" href="#" target="_blank">Ir al ejercicio</a>
+         </div>
+         <img class="jsCard__img" src="img/code.svg" alt="">
+      </div>
+   </div>
+</body>
+</html>
